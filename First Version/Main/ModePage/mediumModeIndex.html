@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Mode PAge</title>
+    <link rel="stylesheet" href="modeStyle.css">
+    <script src="modeScript.js" defer></script>
+</head>
+<body onload="playMusic()">
+   
+        <h4>Select level and then pick a picture to solve...</h4>
+  
+    <div class="btnContainer">
+      <button class="btnMode" onclick="location.href='easyModeIndex.html'">EASY</button>
+      <button class="btnMode" onclick="location.href='mediumModeIndex.html'">MEDIUM</button>
+      <button class="btnMode" onclick="location.href='hardModeIndex.html'">HARD</button>
+    </div>
+    <div class="imgContainer">
+        <div class="row">
+            <div class="img-hover-zoom content-image ">
+                <img src="../ModePage/nature/greenlake.jpg" style="width:100%" 
+                    onclick="location.href= '../ThreeDiPage/mediumIndex1.html'" alt="" id="pe2" class="images">        
+            </div>
+            <div class="img-hover-zoom content-image rotateLeft">
+                <img src="../ModePage/nature/hill.jpg" style="width:100%" 
+                    onclick="location.href= '../ThreeDiPage/mediumIndex2.html'" alt="" id="pe2" class="images">        
+            </div>
+            <div class="img-hover-zoom content-image">
+                <img src="..//ModePage/nature/icemountain.jpg" style="width:100%" 
+                    onclick="location.href= '../ThreeDiPage/mediumIndex3.html'" alt="" id="pe2" class="images">        
+            </div>
+            <div class="img-hover-zoom content-image rotateLeft">
+                <img src="../ModePage/nature/lake.jpg"style="width:100%" 
+                    onclick="location.href= '../ThreeDiPage/mediumIndex4.html'" alt="" id="pe2" class="images">        
+            </div>
+        </div>
+    </div>
+    <button class="backHome" onclick="location.href='../HomePage/index.html'">Back</button>
+   <!--<audio src="https://www.bensound.com/bensound-music/bensound-moose.mp3" ></audio>--> 
+</body>
+</html>
