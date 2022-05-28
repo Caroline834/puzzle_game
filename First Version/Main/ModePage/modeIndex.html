@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Mode Page</title>
+    <link rel="stylesheet" href="chooseMode.css">
+    <link rel="stylesheet" href="../FontAwesome/css/all.min.css">
+    <script src="modeScript.js" defer></script>
+    <script src="sweetalert.min.js"></script>
+</head>
+<body onload="playMusic()">
+    <button type="button" class="closePage" onclick="closePage()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+    <h4>Select Your Desire Level...</h4>
+    
+    <div class="container">
+        <button class="btnMode" onclick="location.href='easyModeIndex.html'">EASY<sub style="color: chocolate;">[2x2]</sub></button>
+        <button class="btnMode" onclick="location.href='mediumModeIndex.html'">MEDIUM<sub style="color: chocolate;">[3x3]</sub></button>
+        <button class="btnMode" onclick="location.href='hardModeIndex.html'">HARD<sub style="color: chocolate;">[4x4]</sub></button>
+    </div>
+    <!-- <audio src="../ModePage/sound/fmchoosemodesound.mp3" loop></audio>-->
+</body>
+</html>
