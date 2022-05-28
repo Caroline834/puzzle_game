@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    overflow: hidden;
+    height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 5.3% 17.2%,  rgba(255,208,253,1) 0%, rgba(255,237,216,1) 90% );
+    font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    animation: gradient 15s linear infinite alternate;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .tips{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    margin: 10px 50px 10px 50px;
+    width: auto;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: lemonchiffon;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 1s ;
+    }
+    .tips:hover{
+      background-color: transparent;
+      color: #1a1a1a;
+      transform: scale(1.2);
+    }
+    .closePage{
+      position: absolute;
+      top:20px;
+      right: 20px;
+      margin: 10px 50px 10px 50px;
+      width: auto;
+      padding: 10px;
+      background-color: #1a1a1a;
+      color: lemonchiffon;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 1s ;
+      }
+      .closePage:hover{
+        background-color: transparent;
+        color: #1a1a1a;
+        transform: scale(1.2);
+      }
+  /* floating squares  */
+  span {
+    border: 2px solid lightslategrey;
+    position: absolute;
+    pointer-events: none;
+    background: transparent;
+    animation: animate 5s linear infinite;
+    opacity: 0.5;
+  }
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+    20% {
+      transform: scale(0.5);
+      opacity: 0.3;
+    }
+    90% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1) translateY(-500%) rotate(360deg);
+      opacity: 0;
+    }
+  }
+/*Enter game button*/
+.image{
+  position: absolute;
+  top:50%;
+  left:40%;
+  width: 220px;
+  padding: 10px;
+  background-color: #1a1a1a;
+  color: lemonchiffon;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 1s ;
+  
+  }
+  .image:hover{
+    background-color: transparent;
+    color: #1a1a1a;
+    transform: scale(1.2);
+  }
+  /* Heading */
+  .text2 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #333;
+    margin: 30px;
+    --x-offset: -5px;  /*-0.0625em*/
+    --y-offset: 5px;
+    --stroke: 0.025em;
+    --background-color:cornsilk;
+    --stroke-color: lightblue;
+    animation: text2 4s ease-in-out infinite alternate;
+    text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
+      calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke))
+        0px var(--stroke-color);
+  }
+  @supports (text-shadow: 2px 2px 2px 2px black) {
+    .text2 {
+      text-shadow: var(--x-offset) var(--y-offset) 0px 0px var(--background-color),
+        var(--x-offset) var(--y-offset) var(--stroke) 0px var(--stroke-color);
+    }
+  }
+  .text1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #333;
+    margin: 30px;
+    /*text-shadow: 2px -2px 2px white;*/
+    animation: text1 4s ease-in-out infinite alternate;
+    --x-offset: -5px;  /*-0.0625em*/
+    --y-offset: 5px;
+    --stroke: 0.025em;
+    --background-color:cornsilk;
+    --stroke-color: lightblue;
+    text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
+      calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke))
+        0px var(--stroke-color);
+  }
+  
+  @keyframes text1 {
+    0% {
+      color: #1a1a1a;
+      margin-bottom: 100px;
+      transform: translateX(-100px);
+    }
+  
+    100%{
+      letter-spacing: 2px;
+      margin-bottom: 330px;
+      transform: translateX(100px);
+    }
+  }
+  @keyframes text2 {
+    0% {
+      color: #1a1a1a;
+      margin-bottom: 400px;
+      transform: translateX(200px);
+    }
+    100%{
+      letter-spacing: 2px;
+      margin-bottom: 200px;
+      transform: translateX(-100px);
+    }
+  }
+  
+  
