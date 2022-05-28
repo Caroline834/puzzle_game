@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../FourDiPage/hardScript.js" defer></script>
+    <script src="../FourDiPage/soundOnOff.js" defer></script>
+    <link rel="stylesheet" href="/FontAwesome/css/all.min.css">
+    <script src="../sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.6/dist/sweetalert2.all.min.js"></script>
+</head>
+<body onload="h_start_game1()">
+    <div class="puzzle_board">
+        <div id="hard_board">
+        </div>
+        <div id="record_container">
+            <div id="record_moves">Moves:0</div>
+            <div id="record_duration">Times:0</div>
+        </div>
+    </div>
+    <div id="actual">
+        <div class="icon_container">
+            <a href="../ModePage/hardModeIndex.html" class="backtomode"><i class="fa-solid fa-house"></i></a>
+            <i class="fa-solid fa-rotate" id="again_btn" onClick="window.location.reload();"></i>
+            <i class='fa-solid fa-play' id="playPausebtn" onclick="playPause()"></i>
+        </div>
+        <img src="../FourDiPage/actualImg/apple.jpg" class="actual_img">
+        <div class="hintText">Re-arrange to create a picture like this.</div>
+    </div>
+    <audio id="bgAudio" src="../FourDiPage/sound/fmhardsound.mp3" loop></audio>
+    <audio src="../FourDiPage/sound/gamewin.wav" id="gameWin"></audio>
+
+</body>
+</html>
